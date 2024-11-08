@@ -25,3 +25,12 @@
     color: #C71585;
 }
 
+.my-image {
+    width: 300px;
+    border-radius: 10px;
+}
+ 
+.img {
+    width: 300px;
+    border: 2px solid #000;
+}

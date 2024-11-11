@@ -1,36 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-.centered
-{
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.poem {
+    grid-column: span 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.large
-{
-    font-size: x-large;
-}
-
-.medium
-{
-    font-size: medium;
-}
-
-.small
-{
-    font-size: small;
-}
-
-.blue
-{
-    color: #173fb9;
-}
-
-.my-image {
-    width: 300px;
-    border-radius: 10px;
-}
- 
-.img {
-    width: 300px;
-    border: 2px solid #000;
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
 }

@@ -1,55 +1,138 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <link href="styles.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poem with Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
 
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            grid-gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-        <title>
-            Birthday gift
-        </title>
-    </head>
-    <body class="centered pink">
-        <h1 class="large">
+        .container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-            Happy Birthday Naomi
-        </h1>
-        <h2 class="medium">
-            A cousin so bright, with a heart full of cheer,<br>
-            A mom who shines, year after year.<br>
-            Short in stature, but big in grace,<br>
-            You light up the world with your smile on your face.<br>
-        </h2>
-        <h3 class="medium">
-            From dancing on tables at Wendy's with flair,<br>
-            To babysitting us with love and care.<br>
-            You've always been there, a joy and a friend,<br>
-            With laughter and kindness that never end.<br>
-        </h3>
-        <h4 class="medium">
-            Today’s your day, so let’s make it grand,<br>
-            Enjoy the hamster—your new little friend!<br>
-            You’ve filled our hearts, and you always will,<br>
-            With your happy spirit and endless goodwill.<br>
-        </h4>
-        <h5 class="medium">
-            So here’s to you, Naomi, on your special day,<br>
-            May joy and love come your way!<br>
-          
-        </h5>
-        <h6>
-            
+        .poem {
+            grid-column: span 2;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-            <img src="Baby.png" alt="Babysitting" class="my-image img"> 
-            <img src="Burger.png" alt="Whataburger" class="my-image img"> <br>
+        h2 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-            <img src="Christmas.png" alt="Christmas party" class="my-image img"> 
-            <img src="Shower.png" alt="Baby shower" class="my-image img"> <br>
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
 
-        </h6>
-        <h7 class="small">
-           
-            Copyright &#169; Isaiah Jimenez
-        </h7>
-    </body>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Image 1 -->
+        <img src="image1.png" alt="Image 1">
+
+        <!-- Poem block 1 -->
+        <div class="poem">
+            <h2>The Light You Give</h2>
+            <p>
+                In every dawn, you are the light,<br>
+                That pushes shadows far from sight.<br>
+                When skies grow dark, and hopes grow thin,<br>
+                You lift me up, you help me win.
+            </p>
+        </div>
+
+        <!-- Image 2 -->
+        <img src="image2.png" alt="Image 2">
+
+        <!-- Image 3 -->
+        <img src="image3.png" alt="Image 3">
+
+        <!-- Poem block 2 -->
+        <div class="poem">
+            <p>
+                Your steady hands, your caring heart,<br>
+                A quiet strength, a work of art.<br>
+                No mountain seems too tall to climb,<br>
+                When you are standing by my side.
+            </p>
+        </div>
+
+        <!-- Image 4 -->
+        <img src="image4.png" alt="Image 4">
+
+        <!-- Image 5 -->
+        <img src="image5.png" alt="Image 5">
+
+        <!-- Poem block 3 -->
+        <div class="poem">
+            <p>
+                Through every storm, through every tear,<br>
+                Your love remains, forever near.<br>
+                A guiding star, a constant grace,<br>
+                That lights the path I dare to trace.
+            </p>
+        </div>
+
+        <!-- Image 6 -->
+        <img src="image6.png" alt="Image 6">
+
+        <!-- Image 7 -->
+        <img src="image7.png" alt="Image 7">
+
+        <!-- Poem block 4 -->
+        <div class="poem">
+            <p>
+                And every time I feel I fall,<br>
+                I hear your voice, your gentle call:<br>
+                "Keep going, love, you're strong, you'll see,"<br>
+                Because you always believe in me.
+            </p>
+        </div>
+
+        <!-- Image 8 -->
+        <img src="image8.png" alt="Image 8">
+
+        <!-- Image 9 -->
+        <img src="image9.png" alt="Image 9">
+
+        <!-- Poem block 5 -->
+        <div class="poem">
+            <p>
+                You are the best, the brightest light,<br>
+                My love for you, pure and bright.<br>
+                Today I honor you, with love so true,<br>
+                Thank you for all that you do.
+            </p>
+        </div>
+
+        <!-- Image 10 -->
+        <img src="image10.png" alt="Image 10">
+    </div>
+</body>
 </html>

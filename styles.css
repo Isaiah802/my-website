@@ -23,17 +23,50 @@ body {
     margin-top: 80px;
     background-size: cover;
     **/
+
+
+    /**
     position: relative;
     color: white;
     text-align: center;
     padding: 100px 20px;
     margin-top: 80px;
-    background-image: url('assets/images/Logo.PNG'); /* Path to your image */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    height: 100vh; /* Sets the hero section to take up the full viewport height */
-    
+    background-image: url('assets/images/Logo.PNG'); /* Path to your image 
+    background-size: cover; /* Ensure the image covers the entire section 
+    background-position: center center; /* Centers the image 
+    background-repeat: no-repeat; /* Prevents the image from repeating 
+    height: 100vh; /* Sets the hero section to take up the full viewport height 
+    **/
+
+ 
+        position: relative;
+        color: white;
+        text-align: center;
+        margin-top: 80px;
+        padding: 120px 20px; /* Add top padding to prevent overlap with header */
+        background-image: url('assets/images/Logo.PNG');
+        background-size: cover; /* Ensures the image covers the full section */
+        background-position: center center; /* Keeps the image centered */
+        background-repeat: no-repeat; /* Prevents image repetition */
+        height: 100vh; /* Full viewport height */
+    }
+
+    /* For tablets (Adjusts height and padding) */
+    @media (max-width: 768px) {
+        .hero {
+            padding: 80px 20px; /* Adjust padding for tablets */
+            height: 80vh; /* Reduces the height for better viewing */
+        }
+    }
+
+    /* For mobile screens (adjusting padding and height) */
+    @media (max-width: 480px) {
+        .hero {
+            padding: 60px 20px; /* Adjust padding for mobile */
+            height: 70vh; /* Further reduce height on mobile screens */
+        }
+    }
+
 }
 
 .hero h1 {

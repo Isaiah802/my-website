@@ -9,11 +9,12 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f1e7;
     /*  this is the text color of the body  */
-    color: #08173c;
+    color: #000000;
 }
 
 /* Hero Section */
 .hero {
+    /**
     position: relative;
     color: white;
     text-align: center;
@@ -21,6 +22,18 @@ body {
     padding-top: 300px;
     margin-top: 80px;
     background-size: cover;
+    **/
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 80px;
+    background-image: url('assets/images/Logo.PNG'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Sets the hero section to take up the full viewport height */
+    
 }
 
 .hero h1 {

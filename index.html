@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JARR Containers</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ6l1+zNfEXBxtAs2QKpblQ6+Q6T6FFh1/6gA0Jj9OL8Uu0J9FC2lr+Atn0k" crossorigin="anonymous">
+    <!-- Bootstrap CSS (without integrity) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -23,16 +24,33 @@
     <header class="bg-dark text-white py-3 fixed-top w-100" id="navbar">
         <div class="container d-flex justify-content-between align-items-center">
             <a href="index.html" class="text-white display-4 font-weight-bold">JARR Containers</a>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
-                    <li class="nav-item"><a href="products.html" class="nav-link text-white">Products</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link text-white">About Us</a></li>
-                    <li class="nav-item"><a href="inventory.html" class="nav-link text-white">Inventory</a></li>
-                    <li class="nav-item"><a href="testimonials.html" class="nav-link text-white">Testimonials</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
-                </ul>
-            </nav>
+            <!-- Dropdown Navigation -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">JARR Containers</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <!-- Dropdown for Products -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Used Containers</a></li>
+                                    <li><a class="dropdown-item" href="#">One-Trip Containers</a></li>
+                                </ul>
+                            </li>
+                            <!-- Additional dropdowns can go here -->
+                        </ul>
+                    </div>
+                </nav>
+
+<!-- Your custom scripts -->
+<script src="js/scripts.js"></script>
+
+            
         </div>
     </header>
 
@@ -63,7 +81,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card shadow-sm">
-                        <img src="assets/images/container1.jpg" class="card-img-top" alt="Used container">
+                        <img src="assete/images/container1.PNG" class="card-img-top" alt="Used container">
                         <div class="card-body">
                             <p class="card-text">Used Containers</p>
                             <a href="products.html" class="btn btn-outline-dark">Learn More</a>
@@ -72,7 +90,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card shadow-sm">
-                        <img src="assets/images/container2.jpg" class="card-img-top" alt="One-trip container">
+                        <img src="assets/images/container2.PNG" class="card-img-top" alt="One-trip container">
                         <div class="card-body">
                             <p class="card-text">One-Trip Containers</p>
                             <a href="products.html" class="btn btn-outline-dark">Learn More</a>
@@ -98,11 +116,18 @@
         <p>&copy; 2024 JARR Containers LLC. All Rights Reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb6E9gZhQeB1PpU7vmxN6z5EdzO4C0s5Sw2fRv7LM9M8t2fuS" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0XB5e6z9qtwchF4GnCqgAdq5/3z14lgw7Y1pD4XhjTqu87wB" crossorigin="anonymous"></script>
+    <!-- not sure if necessary
+     Bootstrap JS (make sure it's after jQuery and Popper.js) 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    -->
 
     <script src="js/scripts.js"></script>
+
+    <!-- Bootstrap JS Bundle (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>

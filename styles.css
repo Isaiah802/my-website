@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f1e7;
     /*  this is the text color of the body  */
-    color: #cb5656;
+    color: #08173c;
 }
 
 /* Hero Section */
@@ -17,7 +17,9 @@ body {
     position: relative;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
+
+    background-size: cover;
 }
 
 .hero h1 {
@@ -99,4 +101,54 @@ footer {
 /* Map Section */
 #google-map {
     background-color: #e1e1e1;
+}
+
+/* Dropdown Styles */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    background-color: #007bff;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Add some spacing between dropdown items */
+.navbar-nav .dropdown-menu {
+    min-width: 200px;
+}
+
+.nav-link.dropdown-toggle {
+    color: black !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    transition: all 0.5s ease;
+}
+
+.btn-lg:hover {
+    background-color: #08173c;
+    color: white;
+
+}
+
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
 }

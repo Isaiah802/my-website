@@ -17,8 +17,9 @@ body {
     position: relative;
     color: white;
     text-align: center;
-    padding: 120px 20px;
-
+    padding: 100px 20px;
+    padding-top: 300px;
+    margin-top: 80px;
     background-size: cover;
 }
 
@@ -43,11 +44,12 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Navbar */
+/* Navbar*/ 
 #navbar {
     z-index: 1000;
     background-color: #007bff; /* Blue background for header */
 }
+
 
 .nav-link {
     text-transform: uppercase;
@@ -95,7 +97,8 @@ footer {
 
 .card img {
     object-fit: cover;
-    height: 200px;
+    height: auto;
+/*origanly 200px */ 
 }
 
 /* Map Section */
